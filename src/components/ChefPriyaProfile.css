@@ -1,0 +1,148 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: url('backgroundmain.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Header Styling */
+header {
+  background: rgba(51, 51, 51, 0.8);
+  color: white;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  color: rgb(20, 221, 37);
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 1.5em;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: rgba(244, 32, 32, 0.8);
+}
+
+/* Chef Profile Section */
+.chef-profile {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2em auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1em;
+  border: 3px solid rgba(244, 32, 32, 0.7);
+}
+
+.chef-profile h2 {
+  margin: 0.5em 0;
+  color: rgba(244, 32, 32, 0.8);
+}
+
+.chef-profile p {
+  font-size: 1em;
+  color: #555;
+  margin: 0.5em 0;
+}
+
+.chef-profile h3 {
+  margin-top: 1.5em;
+  color: #333;
+  border-bottom: 2px solid rgba(244, 32, 32, 0.5);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Dish Grid */
+.dish-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+  margin-top: 1.5em;
+}
+
+/* Dish Cards */
+.dish-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 1em;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.dish-card:hover {
+  transform: translateY(-5px);
+}
+
+.dish-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.dish-card h4 {
+  margin: 0.8em 0;
+  color: rgba(244, 32, 32, 0.8);
+  font-size: 1.1em;
+}
+
+.dish-card p {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.dish-card .price {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: rgba(244, 32, 32, 0.8);
+}
+
+/* Order Button */
+button {
+  background-color: rgba(244, 32, 32, 0.8);
+  color: white;
+  border: none;
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 1.5em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(244, 32, 32, 1);
+}

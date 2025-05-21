@@ -1,0 +1,296 @@
+/* General Body and Font */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: url('backgroundmain.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header Styling */
+header {
+    background: rgba(51, 51, 51, 0.8);
+    color: white;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-style: italic;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+header nav ul li {
+    /* no margin-left since gap used */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: rgba(244, 32, 32, 0.8);
+}
+
+/* Parallax Section */
+.parallax-section {
+    background: url('parallax-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 4em 2em;
+    color: white;
+    text-align: center;
+}
+
+.parallax-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.parallax-content p {
+    font-size: 1.2em;
+}
+
+/* Main Sections */
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#hero .search-container {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+#hero input[type="text"] {
+    padding: 0.8em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    flex: 1;
+    max-width: 300px;
+}
+
+#hero button {
+    background-color: rgba(244, 32, 32, 0.8);
+    color: white;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#hero button:hover {
+    background-color: rgba(244, 32, 32, 1);
+}
+
+#location-status {
+    text-align: center;
+    margin-top: 0.5em;
+    font-style: italic;
+}
+
+/* Featured Chefs Grid */
+#featured-chefs {
+    margin-top: 3em;
+}
+
+#featured-chefs h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #222;
+}
+
+.chef-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+}
+
+.chef-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 1em;
+}
+
+.chef-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.chef-card h3 {
+    margin: 0.5em 0;
+    color: rgba(244, 32, 32, 0.9);
+}
+
+.chef-card p {
+    margin: 0.3em 0;
+    color: #555;
+}
+
+.chef-card button {
+    margin-top: 1em;
+    background-color: rgba(244, 32, 32, 0.8);
+    color: white;
+    border: none;
+    padding: 0.6em 1.2em;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chef-card button:hover {
+    background-color: rgba(244, 32, 32, 1);
+}
+
+/* View All Chefs Button */
+.view-all-chefs {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.view-all-chefs button {
+    background-color: rgba(244, 32, 32, 0.9);
+    color: white;
+    border: none;
+    padding: 0.8em 2em;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-all-chefs button:hover {
+    background-color: rgba(244, 32, 32, 1);
+}
+
+/* Footer Styling */
+footer {
+    background: rgba(51, 51, 51, 0.8);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 3em;
+}
+
+/* Chatbot Container */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chatbot-box {
+    width: 320px;
+    max-height: 420px;
+    background: white;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chatbot-header {
+    background-color: rgba(244, 32, 32, 0.9);
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.close-chatbot {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.chatbot-messages {
+    flex-grow: 1;
+    padding: 1em;
+    overflow-y: auto;
+    font-size: 0.9em;
+    background: #f9f9f9;
+}
+
+.message {
+    margin-bottom: 0.7em;
+    padding: 0.5em 0.8em;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.message.bot {
+    background-color: #eee;
+    align-self: flex-start;
+}
+
+.message.user {
+    background-color: rgba(244, 32, 32, 0.9);
+    color: white;
+    align-self: flex-end;
+}
+
+.chatbot-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+.chatbot-input input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    padding: 0.8em 1em;
+    font-size: 1em;
+    border-radius: 0 0 0 10px;
+    outline: none;
+}
+
+.chatbot-input button {
+    background-color: rgba(244, 32, 32, 0.9);
+    border: none;
+    color: white;
+    padding: 0 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 0 0 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.chatbot-input button:hover {
+    background-color: rgba(244, 32, 32, 1);
+}

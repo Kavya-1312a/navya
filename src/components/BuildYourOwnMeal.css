@@ -1,0 +1,153 @@
+/* Global Styles */
+.body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: url('/backgroundmain.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Header */
+.header {
+  background: rgba(51, 51, 51, 0.8);
+  color: white;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.headerTitle {
+  margin: 0;
+  color: rgb(20, 221, 37);
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navItem a:hover {
+  color: rgba(244, 32, 32, 0.8);
+}
+
+/* Main Content */
+.main {
+  text-align: center;
+  padding: 2em 1em;
+}
+
+/* Search Section */
+.searchSection {
+  margin-bottom: 1.5em;
+}
+
+.mealSearch {
+  padding: 0.8em;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.searchBtn {
+  background-color: rgba(244, 32, 32, 0.9);
+  color: white;
+  padding: 0.8em 1.2em;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.searchBtn:hover {
+  background-color: rgba(244, 32, 32, 1);
+}
+
+/* Meal Grid */
+.mealGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+  padding: 1em;
+}
+
+/* Meal Card */
+.mealCard {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.mealCard:hover {
+  transform: scale(1.03);
+}
+
+.mealImg {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 2px solid rgba(244, 32, 32, 0.5);
+}
+
+.mealInfo {
+  padding: 1em;
+}
+
+.mealTitle {
+  font-size: 1.3em;
+  color: rgba(244, 32, 32, 0.9);
+  margin: 0.5em 0;
+}
+
+.mealDesc {
+  font-size: 1em;
+  color: #555;
+  margin: 0.5em 0;
+}
+
+.mealPrice {
+  font-size: 1.2em;
+  color: rgba(244, 32, 32, 0.9);
+  font-weight: bold;
+}
+
+/* Order Button */
+.orderBtn {
+  background-color: rgba(244, 32, 32, 0.9);
+  color: white;
+  border: none;
+  padding: 0.8em 1.2em;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.orderBtn:hover {
+  background-color: rgba(244, 32, 32, 1);
+}
+
+/* Footer */
+.footer {
+  background-color: rgba(51, 51, 51, 0.8);
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 2em;
+}
