@@ -1,6 +1,6 @@
-# Navya
+# Homecheff_Marketplace
 
-Navya is a React application bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Homecheff_Marketplace is a React application bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Prerequisites
 
@@ -47,7 +47,7 @@ Project Structure
 pgsql
 Copy
 Edit
-navya/
+Homecheff_Marketplace/
 ├── public/
 ├── src/
 ├── .gitignore
