@@ -1,13 +1,19 @@
-# Homecheff_Marketplace
+# Homecheff\_Marketplace
 
-Homecheff_Marketplace is a React application bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Homecheff\_Marketplace** is a React application bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Prerequisites
 
-Before you begin, ensure you have met the following requirements:
+Before you begin, ensure you have the following installed:
 
-- **Node.js**: Install Node.js (version 14 or higher recommended). You can download it from [nodejs.org](https://nodejs.org/).
-- **npm**: npm is installed with Node.js. Verify installation by running `npm -v` in your terminal.
+* **Node.js** (v14 or higher): [Download Node.js](https://nodejs.org/)
+* **npm**: Comes bundled with Node.js
+  Verify installation:
+
+  ```bash
+  node -v
+  npm -v
+  ```
 
 ## Getting Started
 
@@ -16,61 +22,55 @@ Follow these steps to set up and run the project locally:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/Abhay-0103/navya.git
-   cd navya
-Install dependencies:
+   git clone https://github.com/Abhay-0103/Homecheff_Marketplace.git
+   cd Homecheff_Marketplace
+   ```
 
-bash
-Copy
-Edit
-npm install
-Start the development server:
+2. **Install dependencies**:
 
-bash
-Copy
-Edit
-npm start
-This will run the app in development mode. Open http://localhost:3000 to view it in your browser. The page will reload when you make changes.
+   ```bash
+   npm install
+   ```
 
-Available Scripts
+3. **Start the development server**:
+
+   ```bash
+   npm start
+   ```
+
+   This will run the app in development mode.
+   Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   The page will reload automatically when changes are made.
+
+## Available Scripts
+
 In the project directory, you can run:
 
-npm start: Runs the app in development mode.
+* `npm start` — Runs the app in development mode.
+* `npm test` — Launches the test runner in interactive watch mode.
+* `npm run build` — Builds the app for production in the `build` folder.
+* `npm run eject` — Ejects the app, exposing configuration files (irreversible action).
 
-npm test: Launches the test runner in interactive watch mode.
+## Project Structure
 
-npm run build: Builds the app for production to the build folder.
-
-npm run eject: Ejects the app, revealing the configurations. Note: This is a one-way operation.
-
-Project Structure
-pgsql
-Copy
-Edit
+```
 Homecheff_Marketplace/
-├── public/
-├── src/
-├── .gitignore
-├── package.json
-├── package-lock.json
-└── README.md
-public/: Contains the static files.
+├── public/              # Static files
+├── src/                 # Source code
+├── .gitignore           # Ignored files
+├── package.json         # Project metadata and dependencies
+├── package-lock.json    # Locked versions of dependencies
+└── README.md            # Project documentation
+```
 
-src/: Contains the source code.
+## Deployment
 
-.gitignore: Specifies files to ignore in Git.
+To create a production build of the app, run:
 
-package.json: Lists dependencies and scripts.
-
-package-lock.json: Locks the versions of dependencies.
-
-README.md: Provides information about the project.
-
-Deployment
-To deploy the production build of the app, run:
-
-bash
-Copy
-Edit
+```bash
 npm run build
-This will create a build directory with the production build of your app.
+```
+
+This will create a `build/` directory with optimized production-ready files.
+
+---
